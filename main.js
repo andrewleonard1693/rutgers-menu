@@ -1,7 +1,5 @@
-const {app, BrowserWindow, ipcMain, Tray, nativeImage} = require('electron')
+const {app, BrowserWindow, ipcMain, Tray} = require('electron')
 const path = require('path')
-
-const assetsDir = path.join(__dirname, 'assets')
 
 let tray = undefined
 let window = undefined
@@ -30,6 +28,7 @@ app.on('ready', () => {
 
   // Tell the popup window to load our index.html file
   window.loadURL(`file://${path.join(__dirname, 'index.html')}`)
+
 
   // Only close the window on blur if dev tools isn't opened
   window.on('blur', () => {
