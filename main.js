@@ -27,7 +27,7 @@ app.on('ready', () => {
   })
 
   // Tell the popup window to load our index.html file
-  window.loadURL(`file://${path.join(__dirname, 'index.html')}`)
+  window.loadURL(`file://${path.join(__dirname, '/src/html/index.html')}`)
 
 
   // Only close the window on blur if dev tools isn't opened
@@ -36,7 +36,7 @@ app.on('ready', () => {
   })
 })
 
-const toggleWindow = () => {
+function toggleWindow(){
   if (window.isVisible()) {
     window.hide()
   } else {
@@ -55,14 +55,12 @@ function showWindow() {
     x = Math.round(trayPos.x + (trayPos.width / 2) - (windowPos.width / 2))
     y = Math.round(trayPos.y + trayPos.height * 10)
   }
-
-
   window.setPosition(x, y, false)
   window.show()
   window.focus()
 }
 
-app.on('window-all-closed', () => {
+app.on('quit-app', () => {
   // On macOS it is common for applications and their menu bar
   // to stay active until the user quits explicitly with Cmd + Q
   if (process.platform !== 'darwin') {
