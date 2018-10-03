@@ -11,7 +11,7 @@ let window = undefined
 app.on('ready', () => {
   // Setup the menubar with an icon
 //   let icon = nativeImage.createFromDataURL(base64Icon)
-  tray = new Tray(__dirname+'/bus.png')
+  tray = new Tray(__dirname+'/src/images/bus.png')
 
   // Add a click handler so that when the user clicks on the menubar icon, it shows
   // our popup window
