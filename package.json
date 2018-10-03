@@ -1,0 +1,19 @@
+{
+  "name": "rutgers-menu",
+  "version": "1.0.0",
+  "description": "Rutgers bus menu app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Andrew Leonard",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^3.0.2",
+    "rutgersjs": "^1.0.9"
+  },
+  "devDependencies": {
+    "electron-packager": "^12.1.2",
+    "electron-prebuilt": "^1.4.13"
+  }
+}
