@@ -74,7 +74,8 @@ html {
 }
 #contentView {
     margin-top: 45px;
-    background-color:#fffff4; 
+    background-color:#fffff4;
+    overflow: hidden;
 }
 #brand {
     font-font-family: 'Merriweather', serif;
