@@ -1,11 +1,16 @@
 console.log('connected')
 
+const ipcRenderer = require('electron').ipcRenderer;
+//handle quit button
+$("#quitButton").click(function(){
+  console.log("quit button clicked")
+  ipcRenderer.send("quit-app");
+})
 
 //handle logic for changing active buttons
 $("#stopsButton").click(function(){
   removeAllActiveStates();
   $("#stopsButton").addClass("activeButton");
-  console.log('hello')
 })
 $("#routesButton").click(function(){
   removeAllActiveStates();

@@ -17,9 +17,6 @@ html {
     height: 40px; /* Set the fixed height of the footer here */
     background-color:rgb(204, 0, 51);
   }
-  .footer-button {
-
-  }
 
   .nav-title {
       color: white;
@@ -28,20 +25,7 @@ html {
   .bg-danger {
     background-color: rgb(204, 0, 51)!important;
   }
-
-  /* button {
-      margin: 0 auto;
-      margin-top: auto;
-      margin-bottom: auto;
-      background-color: #cc0033;
-      color: white;
-      border-radius: 10px;
-      border: 1px solid white;
-      float: left;
-  }*/
-  
-
-.btn-group button {
+ .btn-group button {
     background-color: rgb(204, 0, 51); /* Green background */
     border: 1px solid white; /* white border */
     color: white; /* White text */
@@ -70,10 +54,36 @@ html {
     color: #cc0033!important;
     transition: 0.2s ease-in-out;
 }
+#quitButton {
+    background-color: rgb(204, 0, 51); /* Green background */
+    border: 1px solid white; /* white border */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 75px;
+    text-decoration: none;
+}
+#quitButton:focus {
+    outline: 0;
+}
 
 #allButton {
     border-radius: 0px 8px 8px 0px;
 }
 #stopsButton {
     border-radius: 8px 0px 0px 8px;
+}
+#navbar {
+    height: 45px;
+}
+#contentView {
+    margin-top: 45px;
+}
+#quitButton {
+    border-radius: 8px;
+    color: white;
+}
+#brand {
+    font-font-family: 'Merriweather', serif;
+
+    text-transform: uppercase;
 }
