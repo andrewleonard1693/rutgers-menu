@@ -74,9 +74,25 @@ html {
 }
 #contentView {
     margin-top: 45px;
+    background-color:#fffff4; 
 }
 #brand {
     font-font-family: 'Merriweather', serif;
 
     text-transform: uppercase;
+}
+#viewableContent{
+    padding: 0;
+    text-align: left;
+    margin:0;
+}
+.listItem { 
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 1px solid gainsboro;
+}
+.container {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
 }
